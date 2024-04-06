@@ -1,0 +1,19 @@
+{
+  "name": "application-lib",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "start": "serve dist -p 3000",
+    "build": "webpack --mode production",
+    "dev": "concurrently \"webpack --watch\" \"serve dist -p 3000\""
+  },
+  "dependencies": {
+    "react": "18",
+    "react-dom": "18"
+  },
+  "devDependencies": {}
+}
